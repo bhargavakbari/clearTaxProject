@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ClearTax</string>
+    <string name="no_internet_access">Please make sure your Network is connected</string>
+    <string name="no_recent_tweets_from_server_error">Sorry, could not able to load recent tweets please try again</string>
+    <string name="no_access_token_from_server_error">Sorry, could not able to authorized you please retry</string>
+    <string name="fetching_tweets">fetching recent tweets</string>
+    <string name="most_frequent_word">3 Most frequent words</string>
+    <string name="retry_button">Retry</string>
+    <string name="without_stop_words">Stop words excluded</string>
+    <string name="with_stop_words">Stop words include</string>
+    <string name="refresh_tweet_button">Refresh Tweets</string>
+</resources>

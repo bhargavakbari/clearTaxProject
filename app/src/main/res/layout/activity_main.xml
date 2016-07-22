@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="@string/most_frequent_word"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch_stop_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:background="@color/light_blue"
+        android:checked="true"
+        android:textSize="14sp"
+        android:text="@string/without_stop_words" />
+
+    <TextView
+        android:id="@+id/tv_word1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_stop_words"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textview_text_size" />
+
+    <View
+        android:id="@+id/horizontal_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_word1"
+        android:background="@color/light_blue" />
+
+    <TextView
+        android:id="@+id/tv_word2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_divider1"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textview_text_size" />
+
+
+    <View
+        android:id="@+id/horizontal_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_word2"
+        android:background="@color/light_blue" />
+
+    <TextView
+        android:id="@+id/tv_word3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_divider2"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textview_text_size" />
+
+    <include layout="@layout/progress_bar_with_text" />
+
+    <Button
+        android:id="@+id/buton_refresh_tweets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_selector"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:text="@string/refresh_tweet_button"/>
+    <RelativeLayout
+        android:id="@+id/rl_retry_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:text="@string/retry_button"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
